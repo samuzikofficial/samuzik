@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontributor – SaMuzik</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen">
+
+  <!-- Navbar (sudah diperbarui sesuai permintaanmu) -->
+  <header class="bg-slate-900/80 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="./" class="text-2xl font-bold text-emerald-400">SaMuzik</a>
+      <nav class="hidden md:flex space-x-8">
+        <a href="index.html" class="hover:text-emerald-400">Beranda</a>
+        <a href="explore-lagu.html" class="hover:text-emerald-400">Eksplor Lagu</a>
+        <a href="kontributor.html" class="text-emerald-400 font-semibold">Kontributor</a>
+        <a href="tentang.html" class="hover:text-emerald-400">Tentang</a>
+      </nav>
+      <button class="bg-emerald-500 hover:bg-emerald-600 text-slate-900 px-4 py-2 rounded-lg font-semibold">
+        Masuk dengan Google
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Kontributor -->
+  <section class="bg-gradient-to-b from-slate-900 to-slate-950 py-16">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-6">
+        Jadi <span class="text-emerald-400">Kontributor</span> SaMuzik
+      </h1>
+      <p class="text-xl text-slate-300 max-w-3xl mx-auto">
+        Bergabunglah bersama ratusan relawan yang membantu melestarikan musik dan bahasa daerah Papua dengan mendokumentasikan lagu-lagu tradisional.
+      </p>
+      <div class="mt-10">
+        <a href="#cara-kontribusi" class="bg-emerald-500 hover:bg-emerald-600 text-slate-900 px-8 py-4 rounded-lg font-semibold text-lg mr-4">
+          Mulai Berkontribusi
+        </a>
+        <a href="#daftar-kontributor" class="border border-slate-600 hover:border-emerald-400 px-8 py-4 rounded-lg font-semibold text-lg">
+          Lihat Kontributor
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cara Berkontribusi -->
+  <section id="cara-kontribusi" class="py-20 bg-slate-900">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+        Bagaimana Cara Berkontribusi?
+      </h2>
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="bg-slate-800 rounded-2xl p-8 text-center">
+          <div class="w-16 h-16 bg-emerald-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
+            <i class="fas fa-sign-in-alt text-3xl text-emerald-400"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-4">1. Masuk dengan Google</h3>
+          <p class="text-slate-400">
+            Klik tombol “Masuk dengan Google” dan login menggunakan akun Google kamu.
+          </p>
+        </div>
+        <div class="bg-slate-800 rounded-2xl p-8 text-center">
+          <div class="w-16 h-16 bg-emerald-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
+            <i class="fas fa-envelope text-3xl text-emerald-400"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-4">2. Tunggu Verifikasi</h3>
+          <p class="text-slate-400">
+            Tim manager akan memverifikasi akunmu dalam waktu maksimal 24 jam.
+          </p>
+        </div>
+        <div class="bg-slate-800 rounded-2xl p-8 text-center">
+          <div class="w-16 h-16 bg-emerald-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
+            <i class="fas fa-music text-3xl text-emerald-400"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-4">3. Tambahkan Lagu</h3>
+          <p class="text-slate-400">
+            Setelah disetujui, kamu bisa menambahkan lagu beserta audio/YouTube, lirik multibahasa, dan informasi suku.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-16 text-center">
+        <p class="text-slate-300 mb-6">
+          Setelah login dan terverifikasi, kamu akan mendapatkan akses ke dashboard kontributor untuk mengunggah lagu baru.
+        </p>
+        <button class="bg-emerald-500 hover:bg-emerald-600 text-slate-900 px-8 py-4 rounded-lg font-semibold text-lg">
+          Masuk dengan Google Sekarang
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Manfaat Berkontribusi -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+        Mengapa Berkontribusi di SaMuzik?
+      </h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center">
+          <i class="fas fa-heart text-5xl text-emerald-400 mb-4"></i>
+          <h3 class="font-semibold text-xl mb-2">Melestarikan Budaya</h3>
+          <p class="text-slate-400">Membantu menjaga warisan bahasa dan musik Papua agar tidak punah.</p>
+        </div>
+        <div class="text-center">
+          <i class="fas fa-users text-5xl text-emerald-400 mb-4"></i>
+          <h3 class="font-semibold text-xl mb-2">Komunitas Besar</h3>
+          <p class="text-slate-400">Bergabung dengan relawan dari berbagai daerah di Indonesia.</p>
+        </div>
+        <div class="text-center">
+          <i class="fas fa-medal text-5xl text-emerald-400 mb-4"></i>
+          <h3 class="font-semibold text-xl mb-2">Pengakuan Kontribusi</h3>
+          <p class="text-slate-400">Nama kamu akan ditampilkan sebagai kontributor di setiap lagu.</p>
+        </div>
+        <div class="text-center">
+          <i class="fas fa-code text-5xl text-emerald-400 mb-4"></i>
+          <h3 class="font-semibold text-xl mb-2">Open Source</h3>
+          <p class="text-slate-400">Kamu juga bisa ikut mengembangkan platform di GitHub.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Daftar Kontributor Teratas -->
+  <section id="daftar-kontributor" class="py-20 bg-slate-900">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+        Kontributor Teratas
+      </h2>
+      <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <!-- Contoh kontributor -->
+        <div class="bg-slate-800 rounded-xl p-6 text-center">
+          <img src="https://i.pravatar.cc/150?img=1" alt="Kontributor" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-emerald-500">
+          <h3 class="font-semibold text-lg">Yohanes K.</h3>
+          <p class="text-slate-400 text-sm">Suku Dani</p>
+          <p class="text-emerald-400 font-bold mt-3">127 Lagu</p>
+        </div>
+        <div class="bg-slate-800 rounded-xl p-6 text-center">
+          <img src="https://i.pravatar.cc/150?img=2" alt="Kontributor" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-emerald-500">
+          <h3 class="font-semibold text-lg">Maria W.</h3>
+          <p class="text-slate-400 text-sm">Suku Biak</p>
+          <p class="text-emerald-400 font-bold mt-3">95 Lagu</p>
+        </div>
+        <div class="bg-slate-800 rounded-xl p-6 text-center">
+          <img src="https://i.pravatar.cc/150?img=3" alt="Kontributor" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-emerald-500">
+          <h3 class="font-semibold text-lg">Elias M.</h3>
+          <p class="text-slate-400 text-sm">Suku Asmat</p>
+          <p class="text-emerald-400 font-bold mt-3">82 Lagu</p>
+        </div>
+        <div class="bg-slate-800 rounded-xl p-6 text-center">
+          <img src="https://i.pravatar.cc/150?img=5" alt="Kontributor" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-emerald-500">
+          <h3 class="font-semibold text-lg">Theresia A.</h3>
+          <p class="text-slate-400 text-sm">Suku Mee</p>
+          <p class="text-emerald-400 font-bold mt-3">71 Lagu</p>
+        </div>
+        <!-- Tambahkan lebih banyak jika diperlukan -->
+      </div>
+      <div class="text-center mt-12">
+        <a href="#" class="text-emerald-400 hover:text-emerald-300 font-semibold">
+          Lihat Semua Kontributor <i class="fas fa-arrow-right ml-2"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 border-t border-slate-800 py-10 mt-20">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <p class="text-slate-400">© 2025 SaMuzik • Open Source Platform for Cultural Preservation</p>
+    </div>
+  </footer>
+
+</body>
+</html>
